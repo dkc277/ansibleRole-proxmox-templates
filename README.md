@@ -67,3 +67,18 @@ Author Information
 ------------------
 
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+
+How to run it
+-------------
+
+- make sure ansible is enabled by starting the python virtual environment
+- make hosts.ini file with the name of hosts
+- add the ssh public key in main.yaml
+- set the directory structure of roles/ansibleRole-proxmox-templates and copy all the contents of the project in that folder
+- run the command
+
+```
+ansible-playbook proxmox-cloud-init.yaml -i hosts.ini
+```
+
+- that should create a template in proxmox for creation of the k8s nodes
