@@ -75,6 +75,7 @@ How to run it
 - make hosts.ini file with the name of hosts
 - add the ssh public key in main.yaml
 - set the directory structure of roles/ansibleRole-proxmox-templates and copy all the contents of the project in that folder
+- disable the proxmox suscribtion for enterprise repo as that will cause auth error when runnig the job
 - run the command
 
 ```
