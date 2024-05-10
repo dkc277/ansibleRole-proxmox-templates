@@ -74,12 +74,12 @@ How to run it
 - make sure ansible is enabled by starting the python virtual environment
 - make hosts.ini file with the name of hosts
 - add the ssh public key in main.yaml
-- set the directory structure of roles/ansibleRole-proxmox-templates and copy all the contents of the project in that folder
+- for tutorial on ansible roles see https://www.digitalocean.com/community/tutorials/how-to-use-ansible-roles-to-abstract-your-infrastructure-environment
+- at the git-repo folder create directory structure of roles/ansibleRole-proxmox-templates and copy all the contents of the project in that folder
+- then copy the proxmox-cloud-init.yaml and hosts.ini to git-repo folder 
 - disable the proxmox suscribtion for enterprise repo as that will cause auth error when runnig the job
-- run the command
-
+- Finally run the command
 ```
 ansible-playbook proxmox-cloud-init.yaml -i hosts.ini
 ```
-
 - that should create a template in proxmox for creation of the k8s nodes
